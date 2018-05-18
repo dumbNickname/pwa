@@ -1,6 +1,8 @@
 import {HomeComponent} from '../home/home.component';
 import {Routes} from '@angular/router';
 import {BookOverviewComponent} from '../../book/book-overview/book-overview.component';
+import {MatProgressSpinnerModule} from '@angular/material';
+import {AppShellComponent} from '../../app-shell/app-shell.component';
 
 export const routes: Routes = [
   {

@@ -9,6 +9,8 @@ import {RouterModule} from '@angular/router';
 import {routes} from './shared/routes/routes';
 import {BookModule} from './book/book.module';
 import {HttpClientModule} from '@angular/common/http';
+import {AppShellComponent} from './app-shell/app-shell.component';
+import {MatProgressSpinnerModule} from '@angular/material';
 
 
 @NgModule({
@@ -16,7 +18,7 @@ import {HttpClientModule} from '@angular/common/http';
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'serverApp'}),
     HttpClientModule,
     BrowserAnimationsModule,
     SharedModule.forRoot(),

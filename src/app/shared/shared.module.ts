@@ -1,6 +1,9 @@
 import {ModuleWithProviders, NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {MatButtonModule, MatCardModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
+import {
+  MatButtonModule, MatCardModule, MatIconModule, MatListModule, MatProgressSpinnerModule, MatSidenavModule,
+  MatToolbarModule
+} from '@angular/material';
 import {ToolbarComponent} from './toolbar/toolbar.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
