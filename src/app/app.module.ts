@@ -9,8 +9,8 @@ import {RouterModule} from '@angular/router';
 import {routes} from './shared/routes/routes';
 import {BookModule} from './book/book.module';
 import {HttpClientModule} from '@angular/common/http';
-import {AppShellComponent} from './app-shell/app-shell.component';
-import {MatProgressSpinnerModule} from '@angular/material';
+import {environment} from '../environments/environment';
+import {ServiceWorkerModule} from '@angular/service-worker';
 
 
 @NgModule({
@@ -19,6 +19,7 @@ import {MatProgressSpinnerModule} from '@angular/material';
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'serverApp'}),
+    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
     HttpClientModule,
     BrowserAnimationsModule,
     SharedModule.forRoot(),

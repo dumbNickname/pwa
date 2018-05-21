@@ -29,7 +29,8 @@
       "appShell": {
         "app": "ssr-app",
         "route": "app-shell"
-      }
+      },
+      "serviceWorker": true
     },
     {
       "root": "src",
