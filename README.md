@@ -59,7 +59,7 @@ npm install -g @angular/cli
 
 ### Clone, install dependencies and run
 
-Clone this repository and go to the `0-app-shell` branch:
+Clone this repository and go to the `3-service-worker` branch:
 ```
 git clone https://github.com/devonfw-ng-adv-training/ng-universal.git -b 0-start
 ```
@@ -79,9 +79,9 @@ npm start
 This npm script starts the backend server on port `9000` and the frontend development server on port `4200`
 which proxies all REST calls to the backend server. Go to [http://localhost:4200](http://localhost:4200)  
 
-### App shell in action 
+### App shell and Service Worker in action 
 
-Build the app including Universal rendering of the app shell and start the server:
+Build the app including Universal rendering of the app shell and Service Worker generation and start the server:
 ```
 npm run server:prod
 ```
