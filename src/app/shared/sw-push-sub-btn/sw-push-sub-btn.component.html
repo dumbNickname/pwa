@@ -1,0 +1,7 @@
+<button mat-icon-button *ngIf="swPushEnabled && !whileToggling; else spinner" (click)="togglePushNotifications()">
+  <mat-icon>{{alreadySubscribed ? 'notifications_off' : 'notifications'}}</mat-icon>
+</button>
+
+<ng-template #spinner>
+  <mat-spinner [diameter]="40"></mat-spinner>
+</ng-template>
