@@ -9,7 +9,7 @@ import {take} from 'rxjs/operators';
   styleUrls: ['./sw-push-sub-btn.component.scss']
 })
 export class SwPushSubBtnComponent implements OnInit {
-  readonly VAPID_PUBLIC_KEY = 'BK8kQcsdYJxxwtx7Uc3uj5Nbu0-_9cTsaqNZy3ir8h5aq4tm8EwnPuxINuTnGCl146XGY9XVd_IunCkHslfOL_E';
+  private readonly VAPID_PUBLIC_KEY = 'BK8kQcsdYJxxwtx7Uc3uj5Nbu0-_9cTsaqNZy3ir8h5aq4tm8EwnPuxINuTnGCl146XGY9XVd_IunCkHslfOL_E';
 
   swPushEnabled = true;
   alreadySubscribed = false;
