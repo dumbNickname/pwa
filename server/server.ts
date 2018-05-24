@@ -78,7 +78,7 @@ app.post('/api/message', (req, res) => {
           }
         }
       }))))
-      .then(() => res.status(200).json({message: 'Newsletter sent successfully.'}))
+      .then(() => res.sendStatus(200))
       .catch(err => {
         console.error('Error sending notification, reason: ', err);
         res.sendStatus(500);
