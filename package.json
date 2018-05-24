@@ -12,7 +12,8 @@
     "e2e": "ng e2e",
     "server": "./node_modules/.bin/ts-node ./server/server.ts",
     "server:debug": "./node_modules/.bin/ts-node %NODE_DEBUG_OPTION% ./server/server.ts",
-    "server:prod": "./node_modules/.bin/npm-run-all --parallel server build"
+    "server:prod": "./node_modules/.bin/npm-run-all --parallel server build",
+    "generate-vapid-keys": "./node_modules/.bin/web-push generate-vapid-keys --json"
   },
   "private": true,
   "dependencies": {
